@@ -8,10 +8,7 @@
 
 
 
-<div align="center">
-    <h3>Workflow Architecture</h3>
-    <img src='How-will-SIEM-works.png'>
-</div><br>
+
 
 
 - The system follows a standard data processing pipeline:
