@@ -32,12 +32,26 @@ def auth_log_filter(log_lines):
                 break
 
     # second filter - removes irrelevant logs
+    noise_keywords = [
+        "buttons",
+        "seat",
+        "Lid",
+    ]
+
     for line in filtered_log_lines:
-        if 'buttons' in line or 'seat' in line or 'Lid' in line:
-            continue
-        if re.search(r'\bc\d+\b', line):
-            continue
-        final_filtered.append(line)
+        ignore = False
+
+        for keyword in noise_keywords:
+            if keyword.lower() in line.lower():
+                ignore = True
+                break
+
+            if re.search(r'\bc\d+\b', line):
+                ignore = True
+                break
+
+        if not ignore:
+            final_filtered.append(line)
 
     return final_filtered
 
@@ -75,24 +89,26 @@ def syslog_log_filter(log_lines):
 
     # second filter - removes irrelevant logs
     noise_keywords = [
-        ".timer",
-        ".path",
-        "pipewire",
-        "wireplumber",
-        "gvfs",
-        "evolution",
-        "gnome-keyring",
-        "cups.service",
-        "speech-dispatcher",
-        "man-db",
-        "apt-daily",
-        "logrotate",
-        "colord",
-        "mintsystem",
-        "udisks2",
-        "buttons",
-        "seat",
-        "Lid",
+        # Sistema e Manutenção
+        ".timer", ".path", "packagekit", "flatpak-helper", "systemd-hostnamed",
+        "systemd-localed", "logrotate", "apt-daily", "man-db", "upower", "thermald",
+        "audit", "systemd-udevd", "plymouth", "cron.service", "dbus.service",
+        "accounts-daemon", "power-profiles", "Stopped user@", "Stopped user-runtime-dir",
+
+        # Hardware e Drivers (Ruído)
+        "irqbalance", "touchegg", "switcheroo-control", "ModemManager", "avahi-daemon",
+        "colord", "cups", "bluetooth.target", "iio-sensor-proxy", "bolt.service",
+        "iwlwifi", "fsckd", "timesyncd", "resolved", "dmesg", "wpa_supplicant",
+        "logind", "udisks2", "rfkill", "speech-dispatcher", "lightdm",
+        "flatpak-helper", "blueman", "kerneloops", "fwupd"
+
+        # Interface Gráfica e Apps de Usuário
+        "xdg-desktop-portal", "xdg-permission-store", "xdg-document-portal",
+        "dconf.service", "at-spi-dbus-bus", "rtkit-daemon", "pipewire", "wireplumber",
+        "Chromium", "Discord", "Telegram", "qbittorrent", "gnome-terminal", "vte-spawn",
+        "xapp-gtk3-module", "WebKitWebProcess", "gvfs", "evolution", "gnome-keyring",
+        "xdg-desktop-por", "NetworkManager-dispatcher", "Stopped target", "Reached target",
+        "Failed to load module",
     ]
 
     for line in filtered_log_lines:
@@ -106,14 +122,6 @@ def syslog_log_filter(log_lines):
         if not ignore:
             final_filtered.append(line)
 
-    '''
-    for line in filtered_log_lines:
-        if 'buttons' in line or 'seat' in line or 'Lid' in line:
-            continue
-        if re.search(r'\bc\d+\b', line):
-            continue
-        final_filtered.append(line)'''
-
     return final_filtered
 
 
@@ -122,8 +130,13 @@ filtered_auth_log_lines = auth_log_filter(auth_log_file_lines)
 
 syslog_file_lines = get_all_sys_logs()
 filtered_syslog_log_lines = syslog_log_filter(syslog_file_lines)
+
+with open('logs.log', 'w') as file:
+    file.write('')
 for i in filtered_syslog_log_lines:
-    print(i)
+    with open('logs.log', 'a+') as file:
+        file.write(i + '\n')
+
 
 """
 TODO
