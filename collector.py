@@ -1,10 +1,7 @@
 import re
 
-AUTH_LOG_PATH = "/var/log/auth.log"
-SYSLOG_PATH = "/var/log/syslog"
-
-def get_all_auth_logs():
-    with open(AUTH_LOG_PATH, 'r', encoding='utf-8', errors='replace') as file:
+def get_all_auth_logs(log_path):
+    with open(log_path, 'r', encoding='utf-8', errors='replace') as file:
         lines = file.readlines()
         for i, line in enumerate(lines):
             line = line.replace('\n', '')
@@ -55,8 +52,8 @@ def auth_log_filter(log_lines):
 
     return final_filtered
 
-def get_all_sys_logs():
-    with open(SYSLOG_PATH, 'r', encoding='utf-8', errors='replace') as file:
+def get_all_sys_logs(log_path):
+    with open(log_path, 'r', encoding='utf-8', errors='replace') as file:
         lines = file.readlines()
         for i, line in enumerate(lines):
             line = line.replace('\n', '')
@@ -123,23 +120,3 @@ def syslog_log_filter(log_lines):
             final_filtered.append(line)
 
     return final_filtered
-
-
-auth_log_file_lines = get_all_auth_logs()
-filtered_auth_log_lines = auth_log_filter(auth_log_file_lines)
-
-syslog_file_lines = get_all_sys_logs()
-filtered_syslog_log_lines = syslog_log_filter(syslog_file_lines)
-
-with open('logs.log', 'w') as file:
-    file.write('')
-for i in filtered_syslog_log_lines:
-    with open('logs.log', 'a+') as file:
-        file.write(i + '\n')
-
-
-"""
-TODO
-
-arrumar os ruidos dos logs do syslog, ta cheio de coisa aleatoria
-"""
