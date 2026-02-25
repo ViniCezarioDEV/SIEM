@@ -1,0 +1,1756 @@
+[
+    {
+        "timestamp": "2026-02-18T00:28:22.056653-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T00:28:28.906454-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T00:29:22.054710-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T00:29:25.777155-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T00:47:49.845931-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T00:47:49.854068-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T01:50:21.263808-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "925",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-18T01:50:21.276676-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "925",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-18T18:26:52.433112-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-18T18:33:02.365372-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T18:33:02.383949-03:00",
+        "hostname": "L5450",
+        "service": "su",
+        "pid": "3510",
+        "event": "pam_unix(su:session): session opened for user root(uid=0) by vinas(uid=0)"
+    },
+    {
+        "timestamp": "2026-02-18T18:33:57.567892-03:00",
+        "hostname": "L5450",
+        "service": "su",
+        "pid": "3510",
+        "event": "pam_unix(su:session): session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T18:33:57.570238-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T18:37:17.613425-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T18:37:25.393104-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T18:38:17.615749-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T18:38:21.751314-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T19:15:46.907320-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "820",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-18T19:15:46.911752-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "820",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-18T21:31:59.770483-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-18T21:42:25.012364-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T21:42:32.270540-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T21:43:24.998870-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-18T21:43:29.149955-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-18T21:52:45.941683-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "855",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-18T21:52:45.953910-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "855",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-19T13:04:30.229781-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-19T13:14:54.369922-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T13:15:10.130169-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T13:15:54.357760-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T13:15:59.344349-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T13:35:29.358576-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T13:35:29.377810-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T13:45:19.105532-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-19T14:14:53.177009-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-19T14:16:31.178347-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T14:16:31.190114-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T15:44:27.061061-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T15:44:33.446837-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T15:45:27.060060-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T15:45:31.721329-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T17:44:27.070744-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T17:44:32.143831-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T17:45:27.069952-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-19T17:45:31.203843-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-19T17:55:14.603884-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-19T18:27:58.150451-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-19T18:36:19.905543-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-19T18:37:02.136772-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-19T18:37:04.855310-03:00",
+        "hostname": "L5450",
+        "service": "unix_chkpwd",
+        "pid": "21209",
+        "event": "password check failed for user (vinas)"
+    },
+    {
+        "timestamp": "2026-02-19T18:37:47.600031-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-19T18:37:47.612664-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "845",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-19T21:47:36.354048-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-19T21:54:06.527884-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-19T22:00:12.145281-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-19T22:00:14.666882-03:00",
+        "hostname": "L5450",
+        "service": "unix_chkpwd",
+        "pid": "3082",
+        "event": "password check failed for user (vinas)"
+    },
+    {
+        "timestamp": "2026-02-19T22:00:41.276270-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-19T22:00:41.288987-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-20T13:15:17.848165-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-20T13:25:43.450372-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T13:25:51.164121-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T13:26:43.435972-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T13:26:47.843634-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T15:25:43.440047-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T15:25:45.244283-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T15:26:43.438139-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T15:26:45.775143-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T16:25:17.393199-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "threat_user": "vinas",
+        "target_user": "root",
+        "command_executed": "/usr/bin/tail -f /var/log/auth.log",
+        "pwd": "/home/vinas/Programming/Python/projects/SIEM",
+        "event": "1 incorrect password attempt"
+    },
+    {
+        "timestamp": "2026-02-20T16:27:57.569806-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "856",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-20T17:05:51.560380-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "856",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-20T18:03:34.931416-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:03:39.647732-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:04:34.934449-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:04:37.098974-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:08:58.152590-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "856",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-20T18:09:01.123996-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "856",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-20T18:09:03.113680-03:00",
+        "hostname": "L5450",
+        "service": "unix_chkpwd",
+        "pid": "22965",
+        "event": "password check failed for user (vinas)"
+    },
+    {
+        "timestamp": "2026-02-20T18:09:06.751351-03:00",
+        "hostname": "L5450",
+        "service": "unix_chkpwd",
+        "pid": "22980",
+        "event": "password check failed for user (vinas)"
+    },
+    {
+        "timestamp": "2026-02-20T18:21:38.526191-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user vinas"
+    },
+    {
+        "timestamp": "2026-02-20T18:21:47.493126-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-20T18:29:27.518753-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:29:28.044420-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:29:55.203885-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:29:55.720695-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:30:08.096397-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:30:35.532500-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:30:59.647433-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:31:02.841055-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:31:09.732815-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:31:09.801472-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:32:09.735525-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T18:32:10.935123-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T18:41:49.766108-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "856",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-20T18:41:49.779319-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "856",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-20T18:41:49.800832-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user vinas"
+    },
+    {
+        "timestamp": "2026-02-20T19:22:57.610650-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-20T19:33:22.828819-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T19:33:25.120711-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T20:32:09.794843-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-20T20:32:12.198575-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-20T20:40:40.530240-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "968",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-20T20:40:40.542641-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "968",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-22T14:07:59.610633-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-22T14:18:24.307810-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-22T14:18:29.122458-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-22T14:19:24.285177-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-22T14:19:28.464584-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-22T14:36:17.113402-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-22T14:36:22.478224-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-22T14:36:54.279970-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-22T14:36:54.418329-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-22T15:34:53.429404-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-22T15:47:19.122609-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-22T16:30:48.156632-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-22T16:30:49.880523-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-22T16:31:48.141995-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-22T16:31:49.912607-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-22T16:38:48.241238-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-22T16:38:48.304351-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-22T17:09:00.266599-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-22T17:09:00.279041-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "889",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-23T13:09:50.083701-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-23T13:20:17.376740-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T13:20:27.839204-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T13:21:17.359381-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T13:21:21.744967-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T15:20:17.383923-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T15:20:23.907243-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T15:21:17.376242-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T15:21:21.595002-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T15:55:03.337308-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-23T15:57:29.248783-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-23T16:02:10.913425-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T16:02:11.060497-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T16:04:02.254260-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-23T16:44:10.173069-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-23T17:02:26.879837-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-23T17:08:01.133924-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-23T18:08:19.230275-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T18:08:25.335245-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T18:09:19.222607-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T18:09:23.561362-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T18:44:06.395621-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-23T18:51:14.084786-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-23T18:51:23.273926-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-23T19:03:35.601057-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-23T20:27:34.231838-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T20:27:41.291484-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T20:28:34.242502-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-23T20:28:39.430632-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-23T20:43:38.807290-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-23T21:24:45.177759-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-23T22:06:43.662691-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-23T22:06:43.668354-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "906",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-23T22:06:43.701842-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user vinas"
+    },
+    {
+        "timestamp": "2026-02-24T12:56:56.657182-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-24T13:07:22.359281-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T13:07:35.365002-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T13:08:22.338360-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T13:08:27.095661-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T15:07:22.332604-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T15:07:27.607972-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T15:08:22.330570-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T15:08:30.270630-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T16:28:00.966786-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "890",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-24T17:11:20.154117-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "890",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-24T17:50:39.821885-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T17:50:48.110734-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T17:51:39.820725-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T17:51:44.107050-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T18:28:30.015196-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "890",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-24T18:28:30.028596-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "890",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-24T22:18:57.222272-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-24T22:25:43.250949-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T22:25:43.271090-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T22:25:48.308201-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T22:25:48.320101-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T22:29:21.949383-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T22:29:28.481920-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T22:30:21.949026-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T22:30:26.216219-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T23:42:51.616300-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T23:42:51.627937-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:12.061971-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:12.074673-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:19.499295-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:19.509424-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:27.201622-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:27.205609-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:32.450634-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:32.462219-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:36.436423-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-24T23:43:36.447864-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-24T23:44:29.317802-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "842",
+        "event": "The system will power off now!"
+    },
+    {
+        "timestamp": "2026-02-24T23:44:29.330235-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "842",
+        "event": "System is powering down."
+    },
+    {
+        "timestamp": "2026-02-25T13:17:42.281406-03:00",
+        "hostname": "L5450",
+        "service": "lightdm",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user vinas(uid=1000) by (uid=0)"
+    },
+    {
+        "timestamp": "2026-02-25T13:28:07.372340-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-25T13:28:19.819238-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-25T13:29:07.355287-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-25T13:29:11.800748-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-25T15:28:07.369722-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-25T15:28:16.275730-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-25T15:29:07.371641-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by (uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-25T15:29:11.983852-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-25T15:34:57.913213-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-25T16:14:42.257804-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-25T16:30:43.862499-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-25T16:30:53.653398-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-25T16:31:06.805759-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-25T16:31:09.135117-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-25T16:31:11.269667-03:00",
+        "hostname": "L5450",
+        "service": "unix_chkpwd",
+        "pid": "14117",
+        "event": "password check failed for user (vinas)"
+    },
+    {
+        "timestamp": "2026-02-25T16:31:14.843539-03:00",
+        "hostname": "L5450",
+        "service": "unix_chkpwd",
+        "pid": "14132",
+        "event": "password check failed for user (vinas)"
+    },
+    {
+        "timestamp": "2026-02-25T16:31:17.763216-03:00",
+        "hostname": "L5450",
+        "service": "unix_chkpwd",
+        "pid": "14136",
+        "event": "password check failed for user (vinas)"
+    },
+    {
+        "timestamp": "2026-02-25T16:31:50.356655-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session opened for user root(uid=0) by vinas(uid=1000)"
+    },
+    {
+        "timestamp": "2026-02-25T16:31:50.376517-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "module": "pam_unix",
+        "submodule": "session",
+        "event": "session closed for user root"
+    },
+    {
+        "timestamp": "2026-02-25T16:35:02.373824-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "threat_user": "vinas",
+        "target_user": "root",
+        "command_executed": "/usr/bin/brightnessctl i",
+        "pwd": "/home/vinas",
+        "event": "2 incorrect password attempts"
+    },
+    {
+        "timestamp": "2026-02-25T16:51:03.304030-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "The system will suspend now!"
+    },
+    {
+        "timestamp": "2026-02-25T16:57:20.161181-03:00",
+        "hostname": "L5450",
+        "service": "systemd-logind",
+        "pid": "812",
+        "event": "Operation 'suspend' finished."
+    },
+    {
+        "timestamp": "2026-02-25T17:09:51.295543-03:00",
+        "hostname": "L5450",
+        "service": "sudo",
+        "threat_user": "vinas",
+        "target_user": "root",
+        "command_executed": "/usr/bin/brightnessctl i",
+        "pwd": "/home/vinas",
+        "event": "1 incorrect password attempt"
+    },
+    {
+        "timestamp": "2026-02-18T00:28:22.353518-03:00",
+        "hostname": "L5450",
+        "service": "systemd",
+        "pid": "1",
+        "event": "Started flatpak-system-helper.service - flatpak system helper."
+    },
+    {
+        "timestamp": "2026-02-18T18:26:42.301518-03:00",
+        "hostname": "L5450",
+        "service": "kernel",
+        "module": "usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.14",
+        "submodule": " New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.14",
+        "event": "usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.14"
+    },
+    {
+        "timestamp": "2026-02-18T18:26:42.301524-03:00",
+        "hostname": "L5450",
+        "service": "kernel",
+        "module": "usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.14",
+        "submodule": " New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.14",
+        "event": "usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.14"
+    },
+    {
+        "timestamp": "2026-02-18T18:26:42.301581-03:00",
+        "hostname": "L5450",
+        "service": "kernel",
+        "module": "usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.14",
+        "submodule": " New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.14",
+        "event": "usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.14"
+    },
+    {
+        "timestamp": "2026-02-18T18:26:42.301583-03:00",
+        "hostname": "L5450",
+        "service": "kernel",
+        "module": "usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.14",
+        "submodule": " New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.14",
+        "event": "usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.14"
+    },
+    {
+        "timestamp": "2026-02-18T18:26:42.301704-03:00",
+        "hostname": "L5450",
+        "service": "kernel",
+        "module": "usb 3-6: New USB device found, idVendor=0bda, idProduct=5588, bcdDevice=34.31",
+        "submodule": " New USB device found, idVendor=0bda, idProduct=5588, bcdDevice=34.31",
+        "event": "3-6: New USB device found, idVendor=0bda, idProduct=5588, bcdDevice=34.31"
+    },
+    {
+        "timestamp": "2026-02-18T18:26:42.301713-03:00",
+        "hostname": "L5450",
+        "service": "kernel",
+        "module": "usb 3-8: New USB device found, idVendor=0a5c, idProduct=5865, bcdDevice= 1.02",
+        "submodule": " New USB device found, idVendor=0a5c, idProduct=5865, bcdDevice= 1.02",
+        "event": "3-8: New USB device found, idVendor=0a5c, idProduct=5865, bcdDevice= 1.02"
+    },
+    {
+        "timestamp": "2026-02-18T18:26:42.301716-03:00",
+        "hostname": "L5450",
+        "service": "kernel",
+        "module": "usb 3-10: New USB device found, idVendor=8087, idProduct=0033, bcdDevice= 0.00",
+        "submodule": " New USB device found, idVendor=8087, idProduct=0033, bcdDevice= 0.00",
+        "event": "3-10: New USB device found, idVendor=8087, idProduct=0033, bcdDevice= 0.00"
+    }
+]
