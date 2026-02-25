@@ -1,4 +1,5 @@
 import json
+import os
 
 def desassemble_log(log):
     # if exist PID in log
@@ -39,3 +40,76 @@ def detect_service(log_message):
     message = log_message.split(' ', 1)[1]
 
     return module, submodule, message
+
+def normalize_log(desassemble_log):
+
+    # any log with PID information
+    if len(desassemble_log) == 5:
+        timestamp, hostname, service, pid, log_info = desassemble_log
+        normalized_log = {
+            "timestamp": timestamp,
+            "hostname": hostname,
+            "service": service,
+            "pid": pid,
+            "event": log_info
+        }
+
+        return normalized_log
+
+    else:
+        timestamp, hostname, service, message = desassemble_log
+        detected_services = detect_service(message)
+
+        # SUDO incorrect password attempt on terminal log
+        if len(detected_services) == 5:
+            threat_user, event, pwd, target, command = detected_services
+
+            normalized_log = {
+                "timestamp": timestamp,
+                "hostname": hostname,
+                "service": service,
+                "threat_user": threat_user,
+                "target_user": target,
+                "command_executed": command,
+                "pwd": pwd,
+                "event": event,
+            }
+
+        # any else log
+        else:
+            module, submodule, event = detected_services
+
+            normalized_log = {
+                "timestamp": timestamp,
+                "hostname": hostname,
+                "service": service,
+                "module": module,
+                "submodule": submodule,
+                "event": event,
+            }
+
+        return normalized_log
+
+
+def transport_to_json_file(normalized_log):
+    JSON_FILE = 'logs.json'
+
+    # updating json file
+    if os.path.exists(JSON_FILE):
+        with open(JSON_FILE, 'r') as file:
+            og_file = json.load(file)  # getting actual data in json file
+
+        # Ensure og_file is a list
+        if not isinstance(og_file, list):
+            og_file = [og_file]
+
+        # Append new log to the list
+        og_file.append(normalized_log)
+
+        with open(JSON_FILE, 'w') as file:
+            file.write(json.dumps(og_file, ensure_ascii=False, indent=4))
+
+    # creating json file (start with a list)
+    else:
+        with open(JSON_FILE, 'w') as file:
+            file.write(json.dumps([normalized_log], ensure_ascii=False, indent=4))
