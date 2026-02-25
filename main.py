@@ -16,9 +16,9 @@ filtered_syslog_log_lines = collector.syslog_log_filter(syslog_file_lines)
 
 # NORMALAZING LOGS INTO JSON
 for log in filtered_auth_log_lines:
-    #timestamp, hostname, service, message = normalization.desassemble_log(log)
     desassemble_log = normalization.desassemble_log(log)
 
+    # any log with PID information
     if len(desassemble_log) == 5:
         timestamp, hostname, service, pid, log_info = desassemble_log
         normalized_log = {
@@ -33,23 +33,41 @@ for log in filtered_auth_log_lines:
 
     else:
         timestamp, hostname, service, message = desassemble_log
+        detected_services = normalization.detect_service(message)
 
-        module, submodule, event = normalization.detect_service(message)
+        # SUDO incorrect password attempt on terminal log
+        if len(detected_services) == 5:
+            threat_user, event, pwd, target, command = detected_services
 
-        normalized_log = {
-            "timestamp": timestamp,
-            "hostname": hostname,
-            "service": service,
-            "module": module,
-            "submodule": submodule,
-            "event": event,
-        }
+            normalized_log = {
+                "timestamp": timestamp,
+                "hostname": hostname,
+                "service": service,
+                "threat_user": threat_user,
+                "target_user": target,
+                "command_executed": command,
+                "pwd": pwd,
+                "event": event,
+            }
+
+        # any else log
+        else:
+            module, submodule, event = detected_services
+
+            normalized_log = {
+                "timestamp": timestamp,
+                "hostname": hostname,
+                "service": service,
+                "module": module,
+                "submodule": submodule,
+                "event": event,
+            }
 
         print(normalized_log)
 
 '''
 TODO
-Estou sentindo falta do log: 
-2026-02-20T16:25:17.393199-03:00 L5450 sudo:    vinas : 1 incorrect password attempt ; TTY=pts/2 ; PWD=/home/vinas/Programming/Python/projects/SIEM ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
-procurar ele kkkkkkkkkkkkkk
+
+esses bang de normalized_log = {} adivinha pra onde tem que ir? KKKKKKKKKKKKKKk
+deveria ta aqui nao
 '''

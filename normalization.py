@@ -22,9 +22,20 @@ def desassemble_log(log):
     return
 
 def detect_service(log_message):
+    # SUDO incorrect password attempt on terminal
+    if 'incorrect password attempt' in log_message:
+        event, _, pwd, target, command = log_message.split(' ; ')
+
+        threat_user, event = event.split(' : ')
+        pwd = pwd.split('=', 1)[1]
+        target = target.split('=', 1)[1]
+        command = command.split('=', 1)[1]
+
+        return threat_user.strip(), event, pwd, target, command
+
+    # any else log
     module = log_message.split('(')[0]
     submodule = log_message.split(':', 1)[1].split(')', 1)[0]
     message = log_message.split(' ', 1)[1]
-
 
     return module, submodule, message
