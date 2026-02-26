@@ -29,14 +29,21 @@
 
 The goal is to transform raw strings into actionable data:
 
-<b>Raw Log:</b> ```2026-02-11T17:59:09.367691-03:00 L5450 unix_chkpwd[16169]: password check failed for user (vinas)```<br><br>
+<b>Raw Log:</b> ```2026-02-26T14:19:54.069572-03:00 L5450 systemd-logind[885]: The system will reboot now!```<br><br>
 <b>Normalized JSON:</b>
 ```json
 {
-  "time": "2026-02-11 17:59:09",
-  "source": "unix_chkpwd",
-  "event": "Failed password",
-  "host": "L5450",
-  "user": "vinas"
+    "timestamp": "2026-02-26T14:19:54.069572-03:00",
+    "hostname": "L5450",
+    "service": "systemd-logind",
+    "event_category": "system",
+    "event_type": "power_state_change",
+    "event_action": "reboot",
+    "source_user": null,
+    "target_user": null,
+    "process": "systemd-logind",
+    "pid": "885",
+    "result": "unknown",
+    "raw_message": "The system will reboot now!"
 }
 ```
