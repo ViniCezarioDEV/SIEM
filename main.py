@@ -14,16 +14,18 @@ syslog_file_lines = collector.get_all_sys_logs(log_path=SYSLOG_PATH)
 filtered_auth_log_lines = collector.auth_log_filter(auth_log_file_lines)
 filtered_syslog_log_lines = collector.syslog_log_filter(syslog_file_lines)
 
-# NORMALAZING LOGS INTO JSON
+# NORMALIZING LOGS INTO JSON
 for log in filtered_auth_log_lines:
-    desassemble_log = normalization.desassemble_log(log)
-    normalizeted_log = normalization.normalize_log(desassemble_log)
-    normalization.transport_to_json_file(normalizeted_log)
+    normalized_log = normalization.normalize_log(log)
+    normalization.save_to_json(normalized_log)
 
 '''
 TODO
 
-tem que arrumar o normalization.py para aceitar os logs do syslog
-alguns ele aceita como eu ja fiz o teste,
-mas outros (quais? eu nao sei, tem q ver) ele da erro de UNPACKING
+tem que arrumar o normalization.py para aceitar todos os logs
+que estao sendo pegos, alguns logs dao o return None
+dao None pq o regex nao da match linha 45-46 normalization.py
+: tentar dar print nesses logs q estao dando none pra ver oq q ta pegando com eles
+: e assim fazer um novo regex sla
+
 '''
