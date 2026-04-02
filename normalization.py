@@ -39,7 +39,7 @@ def parse_log_line(log_line):
     # Example:
     # 2026-02-25T16:31:14.843539-03:00 L5450 sudo[1234]: message
 
-    pattern = r"^(\S+) (\S+) ([^\[\s]+)(?:\[(\d+)\])?: (.+)$"
+    pattern = r"^(\S+) (\S+) ([^:\[\s]+)(?:\[(\d+)\])?:? (.+)$"
     match = re.match(pattern, log_line)
 
     if not match:
@@ -63,7 +63,7 @@ def parse_log_line(log_line):
 def classify_event(service, message):
 
     # Authentication failure
-    if "password check failed" in message:
+    if "password check failed" in message or "authentication failure" in message:
         return "authentication", "authentication_failure", "password_check"
 
     # Sudo incorrect password
@@ -94,7 +94,13 @@ def classify_event(service, message):
     if "New USB device found" in message:
         return "device", "usb_connection", "device_connected"
 
-    return "system", "generic_event", "unknown"
+    # Account Management (Criação e Modificação)
+    if service == "useradd" or "new user" in message:
+        return "account_management", "account_creation", "create"
+    if service == "usermod":
+        return "account_management", "account_modification", "modify"
+
+    return None, None, None
 
 
 # ==============================
@@ -103,26 +109,24 @@ def classify_event(service, message):
 def extract_fields(event, message):
 
     # Authentication failure
-    auth_fail = re.search(r"user \((.*?)\)", message)
+    auth_fail = re.search(r"user[= ]\(?([a-zA-Z0-9_-]+)\)?", message)
     if auth_fail:
         event["source_user"] = auth_fail.group(1)
         event["result"] = "failed"
         return event
 
     # Sudo incorrect password
-    sudo_fail = re.search(
-        r"(\d+) incorrect password attempt[s]?", message)
+    sudo_fail = re.search(r"^\s*(\S+)\s*:\s*(\d+) incorrect password attempt", message)
     if sudo_fail:
+        event["source_user"] = sudo_fail.group(1).strip()
         event["result"] = "failed"
-        event["attempt_count"] = int(sudo_fail.group(1))
+        event["attempt_count"] = int(sudo_fail.group(2))
         return event
 
     # Session opened
-    session_open = re.search(
-        r"session opened for user (\w+).* by (\w+)", message)
+    session_open = re.search(r"session opened for user ([^\(]+).* by ", message)
     if session_open:
-        event["target_user"] = session_open.group(1)
-        event["source_user"] = session_open.group(2)
+        event["target_user"] = session_open.group(1).strip()
         event["result"] = "success"
         return event
 
@@ -140,6 +144,22 @@ def extract_fields(event, message):
     if usb:
         event["vendor_id"] = usb.group(1)
         event["product_id"] = usb.group(2)
+        event["result"] = "success"
+        return event
+
+    # User Creation
+    account_create = re.search(r"new user: name=([^,]+)", message)
+    if account_create:
+        event["target_user"] = account_create.group(1).strip()
+        event["result"] = "success"
+        return event
+
+    # User Modification
+    account_mod = re.search(r"add '([^']+)' to group '([^']+)'", message)
+    if account_mod:
+        event["target_user"] = account_mod.group(1).strip()
+        event[
+            "raw_message"] = f"Added to group: {account_mod.group(2).strip()}"
         event["result"] = "success"
         return event
 
@@ -170,6 +190,9 @@ def normalize_log(log_line):
     category, event_type, action = classify_event(
         parsed["service"], parsed["message"])
 
+    if not category:
+        return None
+
     event["event_category"] = category
     event["event_type"] = event_type
     event["event_action"] = action
@@ -184,21 +207,8 @@ def normalize_log(log_line):
 # STORE TO JSON
 # ==============================
 def save_to_json(event):
-
     if not event:
         return
 
-    if os.path.exists(JSON_FILE):
-        with open(JSON_FILE, "r") as f:
-            data = json.load(f)
-
-        if not isinstance(data, list):
-            data = [data]
-
-        data.append(event)
-
-    else:
-        data = [event]
-
-    with open(JSON_FILE, "w") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+    with open(JSON_FILE, "a", encoding="utf-8") as f:
+        f.write(json.dumps(event, ensure_ascii=False) + "\n")

@@ -19,6 +19,10 @@ def auth_log_filter(log_lines):
         'lightdm:session',          # when someone has successfully logged into the system
         'unix_chkpwd',              # when someone enters the wrong password (system)
         'systemd-logind',           # system status (lid opened/closed), the system will (restart/suspend/etc)
+        'useradd',                  # when a new user is added
+        'new user',                 # when a new user is added
+        'usermod',                  # when user permissions is modified
+        'authentication failure'    # when user authentication fails in terminal
     ]
 
     # first filter - takes only relevant logs
@@ -86,18 +90,23 @@ def syslog_log_filter(log_lines):
 
     # second filter - removes irrelevant logs
     noise_keywords = [
+        # Firewall
+        "ufw", "ufw block", "ufw allow",
+
         # Sistema e Manutenção
         ".timer", ".path", "packagekit", "flatpak-helper", "systemd-hostnamed",
         "systemd-localed", "logrotate", "apt-daily", "man-db", "upower", "thermald",
-        "audit", "systemd-udevd", "plymouth", "cron.service", "dbus.service",
+        "audit", "systemd-udevd", "plymouth", "cron.service", "dbus.service", "bus",
         "accounts-daemon", "power-profiles", "Stopped user@", "Stopped user-runtime-dir",
+        "cron", "anacron.service", "anacron", "successfully activated", "pdate-worker",
 
         # Hardware e Drivers (Ruído)
         "irqbalance", "touchegg", "switcheroo-control", "ModemManager", "avahi-daemon",
         "colord", "cups", "bluetooth.target", "iio-sensor-proxy", "bolt.service",
         "iwlwifi", "fsckd", "timesyncd", "resolved", "dmesg", "wpa_supplicant",
-        "logind", "udisks2", "rfkill", "speech-dispatcher", "lightdm",
-        "flatpak-helper", "blueman", "kerneloops", "fwupd"
+        "logind", "udisks2", "rfkill", "speech-dispatcher", "lightdm", "activating",
+        "flatpak-helper", "blueman", "kerneloops", "fwupd", "systemd-hostnamed.service",
+        "flatpak-system-helper", "systemd-localed.service",
 
         # Interface Gráfica e Apps de Usuário
         "xdg-desktop-portal", "xdg-permission-store", "xdg-document-portal",
@@ -105,7 +114,7 @@ def syslog_log_filter(log_lines):
         "Chromium", "Discord", "Telegram", "qbittorrent", "gnome-terminal", "vte-spawn",
         "xapp-gtk3-module", "WebKitWebProcess", "gvfs", "evolution", "gnome-keyring",
         "xdg-desktop-por", "NetworkManager-dispatcher", "Stopped target", "Reached target",
-        "Failed to load module",
+        "Failed to load module", "activated service", "systemd-hostnamed.service",
     ]
 
     for line in filtered_log_lines:
